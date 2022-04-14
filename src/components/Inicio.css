@@ -27,13 +27,12 @@ p {
   margin: 10px;
 }
 
-body{
+.corpo {
 	background: linear-gradient(116.55deg, #1461D5 3.68%, #0099FF 100%);
-	
 }
 
 .container{
-	height: 95vh;
+	height: 93vh;
 
 	display: flex;
 	flex-direction: column;
