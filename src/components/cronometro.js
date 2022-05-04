@@ -12,7 +12,6 @@ function pomodoro() {
 
         var mls_em_seg = 1000;
         cron = setInterval(() => { timer(); }, mls_em_seg);
-
         clicado = true;
     }else {
         console.log("não vai clicar de novo nao!");
@@ -27,7 +26,6 @@ function timer() {
         //Aqui fica o codigo para o alarme
         console.log('FIM!')
     }
-    
     if (second < 0 && minute != 0) {
         second = 59;
         minute--;
