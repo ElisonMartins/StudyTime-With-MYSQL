@@ -8,7 +8,7 @@ export default ({})=>{
         <>
             <div className='corpo'>
                 <header>
-                    <p>PomoVibes</p>
+                    <p>PomoCode</p>
                     <p><a href="#sobre">Sobre</a></p> 
                 </header>
                 
