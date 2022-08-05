@@ -9,7 +9,7 @@ export default ({})=>{
             <div className='corpo'>
                 <header>
                     <p>PomoCode</p>
-                    <p className='sobre-pomodoro'><a href="#sobre-pomo">Sobre</a></p> 
+                    <p><a href="#sobre-pomo" className='sobre-pomodoro'>Sobre</a></p> 
                 </header>
                 
                 <div className='container'>
