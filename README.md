@@ -1,6 +1,6 @@
 <h1> PomoCode </h1>
 <p> Uma forma rapida e fácil de ser mais produtivo </p>
-Deploy: https://pomo-vibes.vercel.app/
+Deploy: https://pomo-code.vercel.app/
 
 <h2> Sobre </h2>
 
