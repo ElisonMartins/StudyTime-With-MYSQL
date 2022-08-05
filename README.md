@@ -1,4 +1,4 @@
-<h1> PomoVibes </h1>
+<h1> PomoCode </h1>
 <p> Uma forma rapida e fácil de ser mais produtivo </p>
 Deploy: https://pomo-vibes.vercel.app/
 
