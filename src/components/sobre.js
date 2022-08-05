@@ -5,7 +5,7 @@ export default ({})=>{
     return(
         <>
             <div className='sobre'>
-                <h1>Pomodoro</h1>
+                <h1 id="sobre-pomo">Pomodoro</h1>
                 <p>A <strong>Técnica Pomodoro</strong> é um método de gerenciamento de tempo desenvolvido por Francesco Cirillo no final dos anos 1980.
                      A técnica consiste na utilização de um cronômetro para dividir o trabalho em períodos de 25 minutos, separados por breves intervalos.
                      A técnica deriva seu nome da palavra italiana pomodoro (tomate), como referência ao popular cronômetro gastronômico na forma dessa fruta.
