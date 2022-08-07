@@ -50,3 +50,9 @@ p {
 	color: #fff;
 	font-size: 70pt;
 }
+
+.gif {
+	display: block;
+	border: 5px solid #000;
+	border-top-color: #1461D5;
+}
