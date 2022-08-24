@@ -13,7 +13,6 @@ Fonte: Wikipedia </p>
 <p> <strong>JavaScript</strong> </p>
 <p> <strong>React.js</strong> </p>
 
-
 <h2> Contato </h2>
 <p>
   <a href="https://www.linkedin.com/in/elison-martins/" alt="Linkedin">
