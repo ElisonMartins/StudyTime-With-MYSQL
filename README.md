@@ -12,6 +12,7 @@ Fonte: Wikipedia </p>
 <p> <strong>Css</strong> </p>
 <p> <strong>JavaScript</strong> </p>
 <p> <strong>React.js</strong> </p>
+<p> <strong>PostgreSQL(em breve)</strong> </p>
 
 <h2> Contato </h2>
 <p>
