@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './button.js';
-import Wave from './onda.js';
+import TodoList from './todo-list/TodoList'
 import './Inicio.css';
 
 export default ({})=>{
@@ -14,8 +14,8 @@ export default ({})=>{
                 <div className='container'>
                     <h1 className='timer'>25:00</h1>
                     <Button/>
+                    <TodoList/>
                 </div> 
-                <Wave/>
             </div>
         </>
     )
