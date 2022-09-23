@@ -21,7 +21,7 @@ function pomodoro() {
 function timer() {
     second--
     console.log(second)
-    if (minute == 0 && second == 0) {
+    if (minute === 0 && second === 0) {
         clearInterval(cron);
         //Aqui fica o codigo para o alarme
         console.log('FIM!')
