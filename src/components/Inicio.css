@@ -81,9 +81,9 @@ h1 {
 .todo-input {
 	padding: 14px 32px 14px 16px;
 	border-radius: 4px 0 0 4px;
-	border: 2px solid #5d0cff;
+	border: 2px solid #149fff;
 	outline: none;
-	width: 45%;
+	width: 50%;
 	background: transparent;
 	color: #fff;
 }
@@ -100,8 +100,8 @@ h1 {
 	outline: none;
 	background: linear-gradient(
 	  90deg,
-	  rgba(93, 12, 255, 1) 0%,
-	  rgba(155, 0, 250, 1) 100%
+	  rgba(20, 159, 255, 1) 0%,
+	  rgba(17, 122, 255, 1) 100%
 	);
 	color: #fff;
 	text-transform: capitalize;
@@ -158,4 +158,21 @@ h1 {
   
 .edit-icon {
 	color: #000;
+}
+
+@media only screen and (max-width: 450px) {
+	.todo-app {
+		width: 70%;
+	}
+	.todo-input {
+		width: 80%;
+	}
+	.todo-button {
+		padding: 10px;
+		border-radius: 4px;
+	}
+
+	.todo-button.edit {
+		padding: 10px;
+	}
 }
