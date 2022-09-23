@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './button.js';
+import Button from './button.jsx';
 import TodoList from './todo-list/TodoList'
 import './Inicio.css';
 

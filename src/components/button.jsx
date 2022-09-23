@@ -1,5 +1,5 @@
 import React from 'react';
-import Pomodoro from './cronometro.js';
+import Pomodoro from './cronometro.jsx';
 import './button.css';
 
 export default ({})=>{
