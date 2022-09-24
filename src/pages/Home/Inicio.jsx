@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../components/button.jsx';
-import TodoList from '../components/todo-list/TodoList'
+import Button from '../../components/button.jsx';
+import TodoList from '../../components/todo-list/TodoList'
 import './Inicio.css';
 
 export default ({})=>{
@@ -9,7 +9,7 @@ export default ({})=>{
             <div className='corpo'>
                 <header>
                     <p>PomoCode</p>
-                    <p><a href="#sobre-pomo" className='sobre-pomodoro'>Sobre</a></p> 
+                    <p><a href="/details" className='sobre-pomodoro'>Detalhes</a></p> 
                 </header>
                 <div className='container'>
                     <h1 className='timer'>25:00</h1>

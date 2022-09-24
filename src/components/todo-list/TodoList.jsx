@@ -43,7 +43,7 @@ function TodoList() {
   return (
     <>
       <div className='todo-app'>
-      <h1>Quais seus planos para hoje?</h1>
+      <h1 className='title'>Quais seus planos para hoje?</h1>
         <TodoForm onSubmit={addTodo} />
         <Todo
           todos={todos}
