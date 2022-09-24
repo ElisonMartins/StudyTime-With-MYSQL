@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './button.jsx';
-import TodoList from './todo-list/TodoList'
+import Button from '../components/button.jsx';
+import TodoList from '../components/todo-list/TodoList'
 import './Inicio.css';
 
 export default ({})=>{
