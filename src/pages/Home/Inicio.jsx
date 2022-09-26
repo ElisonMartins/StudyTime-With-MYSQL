@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Button from '../../components/button.jsx';
 import TodoList from '../../components/todo-list/TodoList'
+import Pomodoro from '../../components/cronometro.jsx';
 import './Inicio.css';
 
 export default ({})=>{
@@ -14,7 +15,7 @@ export default ({})=>{
                 </header>
                 <div className='container'>
                     <h1 className='timer'>25:00</h1>
-                    <Button/>
+                    <Button func={Pomodoro} name='Iniciar'/>
                     <TodoList/>
                 </div> 
             </div>

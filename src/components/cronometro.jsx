@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 var minute = 25;
 var second = 0;
 var cron;
