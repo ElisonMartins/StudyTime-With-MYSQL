@@ -1,0 +1,41 @@
+.login {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.left{
+    width: 40vw;
+    color: #fff;
+    background-image: url(../../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right h1{
+    margin: 30px;
+}
+
+.inputs, .formulario, label {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input{
+    margin: 10px 0;
+}

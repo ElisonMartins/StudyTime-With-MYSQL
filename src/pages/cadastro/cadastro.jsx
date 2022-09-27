@@ -1,4 +1,4 @@
-import './Cadastro.css'
+import './cadastro.css'
 import Button from '../../components/button.jsx';
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
