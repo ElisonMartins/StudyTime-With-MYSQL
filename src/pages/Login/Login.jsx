@@ -5,13 +5,16 @@ import { Link } from 'react-router-dom'
 
 function Login() {
 
-  const [nome, setNome]=useState('')
-
+  const [user, setUser]=useState('')
+  const [pass, setPass]=useState('')
   //const armazenar=(chave,valor)=>{
   //  localStorage.setItem(chave,valor)
   //  console.log("foii")
   //}
-
+  
+  if (localStorage.getItem('ls_nome') === user && localStorage.getItem('ls_pass') === pass){
+    alert("login feito")
+  }
   return (
       <div>
         <div className="login">
@@ -22,23 +25,25 @@ function Login() {
         <div className="right">
           <div className="inputs">
             <h1>Login</h1>
-            
-              
-              <input type="text" value={nome} onChange={(e)=>setNome(e.target.value)} />
-              <Button onClick={localStorage.setItem('ls_nome', nome)} name='Cadastrar' />
               
               <label>Nome
-                <input type="text" 
+                <input type="text"
+                value={user}
+                onChange={(e)=>setUser(e.target.value)}
                 name="nome_completo" 
                 placeholder="Nome"/> 
               </label>
               <label>Senha
-                <input type="password" 
+                <input type="password"
+                  value={pass}
+                  onChange={(e)=>setPass(e.target.value)}
                   name="pass" 
                   placeholder="Senha"/> 
               </label>
-            
+
             <Link to="/home">Login</Link>
+            <p>Nao possue conta? cadastre aqui</p>
+            <Link to="/home">Cadastrar</Link>
           </div>
         </div>
       </div>
