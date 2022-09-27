@@ -43,7 +43,7 @@ function Login() {
 
             <Link to="/home">Login</Link>
             <p>Nao possue conta? cadastre aqui</p>
-            <Link to="/home">Cadastrar</Link>
+            <Link to="/register">Cadastrar</Link>
           </div>
         </div>
       </div>
