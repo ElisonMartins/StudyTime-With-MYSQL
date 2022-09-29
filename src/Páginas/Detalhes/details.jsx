@@ -4,7 +4,7 @@ import './details.css';
 
 export default ({})=>{
     return(
-        <div className='detalhes'>
+        <div className='details'>
             <h1>Detalhes</h1>
             <div className='cards'>
                 <div className='card'>
