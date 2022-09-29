@@ -1,0 +1,30 @@
+.detalhes {
+	background: linear-gradient(116.55deg, #1461D5 3.68%, #0099FF 100%);
+	background-size: 100%;
+	height: 100%;
+}
+
+.grafico {
+    background-color: #fff;
+	height: 80vh;
+}
+
+.cards {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card {
+    color:#000;
+    width: 20vw;
+    height: 25vh;
+    background-color: #cecece;
+    margin: 10px 50px;
+}
+
+.card h2 {
+    padding: 50px;
+    text-align: center;
+}

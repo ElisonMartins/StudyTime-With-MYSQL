@@ -1,12 +1,15 @@
-import React, {useState} from 'react';
+import { useState } from 'react'
+
 var minute = 25;
 var second = 0;
 var cron;
 
 var clicado = false;
 
+
 function pomodoro() {
     
+
     if (!clicado) {
         console.log("primeira vez clicado");
 
@@ -17,6 +20,11 @@ function pomodoro() {
         console.log("não vai clicar de novo nao!");
     }
 }
+//const [pomo, setPomo] = useState(0);
+//const changePomo = () => {
+//    setPomo((prevPomo) => prevPomo + 1)
+//    localStorage.setItem('ls_pomo', pomo)
+//}
 
 function timer() {
     second--
