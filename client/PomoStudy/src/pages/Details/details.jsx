@@ -5,11 +5,11 @@ import Axios from "axios";
 
 export default ({})=>{
 
-    const [listUsers, setListUsers] = useState();
-    console.log(listUsers)
+    const [pomoUser, setPomoUser] = useState();
+    console.log(pomoUser)
     useEffect(()=>{
         Axios.get("http://localhost:3001/details").then((response) => {
-            setListUsers(response.data)
+            setPomoUser(response.data[0].pomos)
         })
     }, [])
 
@@ -18,7 +18,7 @@ export default ({})=>{
             <h1>Detalhes</h1>
             <div className='cards'>
                 <div className='card'>
-                    <h2>18h de Pomocode</h2>
+                    <h2>{pomoUser}</h2>
                 </div>
                 <div className='card'>
                     <h2>18h de Pomocode</h2>

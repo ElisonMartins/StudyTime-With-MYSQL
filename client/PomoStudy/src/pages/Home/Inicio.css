@@ -24,6 +24,11 @@ header {
   color: #fff;
 }
 
+.header-options {
+	display:flex;
+	flex-direction: row;
+}
+
 .detalhes {
   text-decoration: none;
   color: #fff;

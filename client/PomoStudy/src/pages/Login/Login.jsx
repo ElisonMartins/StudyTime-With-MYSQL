@@ -9,6 +9,9 @@ const auth = false
 function Login() {
   const [values, setValues] = useState()
   
+
+  const navigate = useNavigate();
+  
   const handleChangeValues = (value) => {
     setValues(prevValue =>({
       ...prevValue,
@@ -16,7 +19,14 @@ function Login() {
     }))
   }
 
-  const history = useNavigate();
+  function saveName() {
+    localStorage.setItem("name", values.name)
+  }
+
+  function savePomo() {
+    localStorage.setItem("pomos", values.pomos)
+  }
+  console.log(values)
 
   const handleClickLogin = () => {
     Axios.post("http://localhost:3001/login", {
@@ -24,14 +34,15 @@ function Login() {
       password: values.password,
     }).then((response) => {
       if (response.data.msg == "Usuario logado com sucesso") {
-        alert("foi")
-        history('/home')
+        navigate('/home')
+        saveName()
+        savePomo()
+        console.log(response)
       } else {
         alert(response.data.msg)
       }
     });
   };
-  
   
   return (
       <div>
