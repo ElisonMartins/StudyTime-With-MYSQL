@@ -1,20 +1,38 @@
-import './Login.css'
+import './Login.css';
 import Button from '../../components/button.jsx';
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import Axios from "axios";
+
+const auth = false
 
 function Login() {
-
-  const [user, setUser]=useState('')
-  const [pass, setPass]=useState('')
-  //const armazenar=(chave,valor)=>{
-  //  localStorage.setItem(chave,valor)
-  //  console.log("foii")
-  //}
+  const [values, setValues] = useState()
   
-  if (localStorage.getItem('ls_nome') === user && localStorage.getItem('ls_pass') === pass){
-    alert("login feito")
+  const handleChangeValues = (value) => {
+    setValues(prevValue =>({
+      ...prevValue,
+      [value.target.name]: value.target.value,
+    }))
   }
+
+  const history = useNavigate();
+
+  const handleClickLogin = () => {
+    Axios.post("http://localhost:3001/login", {
+      name: values.name,
+      password: values.password,
+    }).then((response) => {
+      if (response.data.msg == "Usuario logado com sucesso") {
+        alert("foi")
+        history('/home')
+      } else {
+        alert(response.data.msg)
+      }
+    });
+  };
+  
+  
   return (
       <div>
         <div className="login">
@@ -28,20 +46,18 @@ function Login() {
               
               <label>Nome
                 <input type="text"
-                value={user}
-                onChange={(e)=>setUser(e.target.value)}
-                name="nome_completo" 
+                onChange={handleChangeValues}
+                name="name" 
                 placeholder="Nome"/> 
               </label>
               <label>Senha
                 <input type="password"
-                  value={pass}
-                  onChange={(e)=>setPass(e.target.value)}
-                  name="pass" 
+                  name="password" 
+                  onChange={handleChangeValues}
                   placeholder="Senha"/> 
               </label>
-
-            <Link to="/home">Login</Link>
+              <Button name='logar' func={() => handleClickLogin()} 
+              />
             <p>Nao possue conta? cadastre aqui</p>
             <Link to="/register">Cadastrar</Link>
           </div>

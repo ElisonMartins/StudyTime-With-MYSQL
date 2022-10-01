@@ -20,9 +20,32 @@ app.post("/register", (req, res) => {
     let SQL = "INSERT INTO users ( name, password ) VALUES ( ?,?)";
 
     db.query(SQL, [name, password], (err, result) => {
-        console.log(err)
+        if (err) {
+            res.send(err);
+        }
+        if(result){
+            res.send({msg:"cadastrado"});
+        }
     })
 })
+
+app.post("/login", (req, res) => {
+    const { name } = req.body;
+    const { password } = req.body;
+
+    let SQL= "SELECT * FROM users WHERE name = ? AND password = ?"
+
+    db.query(SQL, [name, password], (err, result) => {
+        if (err) {
+            res.send(err);
+        }
+        if(result.length > 0){
+            res.send({msg:"Usuario logado com sucesso"});
+        } else {
+            res.send({msg:"Usuario Nao encontrado"});
+        }
+    });
+});
 
 app.get("/details", (req, res) => {
     let SQL = "SELECT * from users";

@@ -1,7 +1,7 @@
 import './cadastro.css'
 import Button from '../../components/button.jsx';
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Axios from "axios";
 
 function Cadastro() {
@@ -14,13 +14,20 @@ function Cadastro() {
       [value.target.name]: value.target.value,
     }))
   }
-
+  const history = useNavigate();
   const handleClickButton = () => {
     Axios.post("http://localhost:3001/register", {
       name: values.name,
       password: values.password,
     }).then((response) => {
+      //history('/login')
       console.log(response);
+      if (response.data.msg == "cadastrado") {
+        alert("foi")
+        history('/')
+      } else {
+        alert(response.data.msg)
+      }
     });
   };
 
@@ -33,7 +40,7 @@ function Cadastro() {
         </div>
         <div className="right">
           <div className="inputs">
-            <h1>Login</h1>
+            <h1>Cadastro</h1>
             
               <label>Nome de usuario
                 <input 
