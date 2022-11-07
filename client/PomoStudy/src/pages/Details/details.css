@@ -4,9 +4,16 @@
 	height: 100%;
 }
 
+
 .grafico {
+    text-align: center;
     background-color: #fff;
 	height: 80vh;
+}
+
+.detalhes {
+    color: #fff;
+    text-align: center;
 }
 
 .cards {
@@ -14,6 +21,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    min-height: 100px;
 }
 
 .card {

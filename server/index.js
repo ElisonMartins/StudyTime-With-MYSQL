@@ -47,10 +47,14 @@ app.post("/login", (req, res) => {
     });
 });
 
-app.get("/details", (req, res) => {
-    let SQL = "SELECT * from users";
 
-    db.query(SQL, (err, result) => {
+app.post("/details", (req, res) => {
+    const { name } = req.body;
+    const { password } = req.body;
+
+    let SQL = "SELECT * FROM crudstudy.users Where name = ? AND password = ?";
+    
+    db.query(SQL, [name, password], (err, result) => {
         if(err) console.log(err);
         else res.send(result);
     })

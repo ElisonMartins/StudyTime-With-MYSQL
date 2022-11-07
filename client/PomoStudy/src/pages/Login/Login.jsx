@@ -23,6 +23,10 @@ function Login() {
     localStorage.setItem("name", values.name)
   }
 
+  function savePass() {
+    localStorage.setItem("password", values.password)
+  }
+
   function savePomo() {
     localStorage.setItem("pomos", values.pomos)
   }
@@ -37,6 +41,7 @@ function Login() {
         navigate('/home')
         saveName()
         savePomo()
+        savePass()
         console.log(response)
       } else {
         alert(response.data.msg)

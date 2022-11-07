@@ -20,10 +20,8 @@ function Cadastro() {
       name: values.name,
       password: values.password,
     }).then((response) => {
-      //history('/login')
       console.log(response);
       if (response.data.msg == "cadastrado") {
-        alert("foi")
         history('/')
       } else {
         alert(response.data.msg)

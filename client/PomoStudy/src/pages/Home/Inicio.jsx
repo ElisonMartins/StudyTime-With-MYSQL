@@ -15,10 +15,10 @@ export default ({})=>{
         <>
             <div className='corpo'>
                 <header>
-                    <p>PomoStudy</p>
+                    <p>StudyTime</p>
                     <div className='header-options'>
                         <p><Link to="/details" className='detalhes'>Detalhes</Link></p> 
-                        <p>{name}</p>
+                        <p>Ola, {name}</p>
                     </div>
                 </header>
                 <div className='container'>

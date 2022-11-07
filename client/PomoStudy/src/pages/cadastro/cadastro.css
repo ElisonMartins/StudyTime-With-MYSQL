@@ -1,3 +1,7 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 .login {
     display: flex;
     flex-direction: row;
